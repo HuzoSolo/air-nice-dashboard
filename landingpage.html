@@ -376,9 +376,9 @@
                       <h6>Zaman Dilimi</h6>
                     </li>
 
-                    <li><a class="dropdown-item" href="#">Bugün</a></li>
-                    <li><a class="dropdown-item" href="#">Bu Ay</a></li>
-                    <li><a class="dropdown-item" href="#">Bu Yıl</a></li>
+                    <li><a class="dropdown-item" href="#" onclick="calculate(1)">Bugün</a></li>
+                    <li><a class="dropdown-item" href="#" onclick="calculate(2)">Bu Ay</a></li>
+                    <li><a class="dropdown-item" href="#" onclick="calculate(3)">Bu Yıl</a></li>
                   </ul>
                 </div>
 
@@ -392,14 +392,15 @@
                     document.addEventListener("DOMContentLoaded", () => {
                       new ApexCharts(document.querySelector("#reportsChart"), {
                         series: [{
-                          name: 'Bakım Giderleri',
-                          data: [10000, 20000, 15000, 25000, 20000, 30000, 25000],
+                          name: 'Giderler',
+                          data: [10000, 20000, 15000, 35000, 20000, 30000, 25000],
                         }, {
                           name: 'Gelirler',
-                          data: [50000, 40000, 45000, 35000, 40000, 30000, 35000]
-                        }, {
-                          name: 'Üretilen Enerji',
-                          data: [15000, 10000, 20000, 10000, 15000, 10000, 15000]
+                          data: [50000, 40000, 45000, 25000, 40000, 30000, 35000]
+                        },
+                        {
+                          name: 'Bakımn Giderleri',
+                          data: [57000, 80000, 43000, 27000, 54000, 60000, 32300]
                         }],
                         chart: {
                           height: 350,
@@ -439,6 +440,8 @@
                         }
                       }).render();
                     });
+
+
                   </script>
                   <!-- End Line Chart -->
 
@@ -471,48 +474,17 @@
                   <table class="table table-borderless datatable">
                     <thead>
                       <tr>
-                        <th scope="col">Ürün Id</th>
                         <th scope="col">Ürün Adı</th>
-                        <th scope="col">Açıklama</th>
-                        <th scope="col">Fiyat</th>
-                        <th scope="col">Durum</th>
+                        <th scope="col">Miktar</th>
+                        <th scope="col">Güncellenme Tarihi</th>
                       </tr>
                     </thead>
                     <tbody>
                       <tr>
-                        <th scope="row"><a href="#">#2457</a></th>
-                        <td>Bobin</td>
-                        <td><a href="#" class="text-primary">Klasik bobin</a></td>
-                        <td>$12</td>
-                        <td><span class="badge bg-success">Depo</span></td>
-                      </tr>
-                      <tr>
-                        <th scope="row"><a href="#">#2147</a></th>
-                        <td>AIR Board</td>
-                        <td><a href="#" class="text-primary">Temel ölçüm aracı</a></td>
-                        <td>$100</td>
-                        <td><span class="badge bg-warning">Sipariş</span></td>
-                      </tr>
-                      <tr>
-                        <th scope="row"><a href="#">#2049</a></th>
-                        <td>Kablo</td>
-                        <td><a href="#" class="text-primary">kablo işte açıklamaya gerek yok</a></td>
-                        <td>$0.99</td>
-                        <td><span class="badge bg-success">Depo</span></td>
-                      </tr>
-                      <tr>
-                        <th scope="row"><a href="#">#2644</a></th>
-                        <td>Pil</td>
-                        <td><a href="#" class="text-primar">şarj edilebilir pil</a></td>
-                        <td>$13</td>
-                        <td><span class="badge bg-danger">Kullanıldı</span></td>
-                      </tr>
-                      <tr>
-                        <th scope="row"><a href="#">#2644</a></th>
-                        <td>Isı sensörü</td>
-                        <td><a href="#" class="text-primary">AIR Board a ait sensör</a></td>
-                        <td>$35</td>
-                        <td><span class="badge bg-success">Depo</span></td>
+                        <th scope="row"><a href="#">ürün1</a></th>
+                        <td>2</td>
+                        <td><a href="#" class="text-primary">2007-04-01 02:09:05Z
+                          </a></td>
                       </tr>
                     </tbody>
                   </table>
@@ -609,7 +581,7 @@
           <!-- WEATHER -->
           <div class="card">
             <div class="filter">
-              <a class="icon" href="#" ><i class="bi bi-sun-fill fs-3" style="color: orange;"></i></a>
+              <a class="icon" href="#"><i class="bi bi-sun-fill fs-3" style="color: orange;"></i></a>
             </div>
 
             <div class="card-body" id="">
@@ -627,8 +599,8 @@
                     <div class="weather-info pt-3">
                       <span class="desc">Bulutlu</span>
                       <span class="divider">|</span>
-                      <span class="date">12.11.2023</span>   
-                      <span class="divider">|</span>                   
+                      <span class="date">12.11.2023</span>
+                      <span class="divider">|</span>
                       <span class="place">İstanbul</span>
                     </div>
                   </div>
@@ -641,7 +613,7 @@
                 <div class="row">
                   <div class="col-4">
                     <div class="weather-icon">
-                      <i class="bi bi-sun fs-2 me-2"  style="color: orange;"></i>
+                      <i class="bi bi-sun fs-2 me-2" style="color: orange;"></i>
                       <span class="temperature fs-3">+21°</span>
                     </div>
                   </div>
@@ -649,8 +621,8 @@
                     <div class="weather-info pt-3">
                       <span class="desc">Güneşli</span>
                       <span class="divider">|</span>
-                      <span class="date">12.10.2023</span>   
-                      <span class="divider">|</span>                   
+                      <span class="date">12.10.2023</span>
+                      <span class="divider">|</span>
                       <span class="place">İstanbul</span>
                     </div>
                   </div>
@@ -663,7 +635,7 @@
                 <div class="row">
                   <div class="col-4">
                     <div class="weather-icon">
-                      <i class="bi bi-cloud-drizzle-fill fs-2" style="color: cadetblue;" ></i>
+                      <i class="bi bi-cloud-drizzle-fill fs-2" style="color: cadetblue;"></i>
                       <span class="temperature fs-3 me-2">+21°</span>
                     </div>
                   </div>
@@ -671,8 +643,8 @@
                     <div class="weather-info pt-3">
                       <span class="desc">Yağmurlu</span>
                       <span class="divider">|</span>
-                      <span class="date">12.10.2023</span>   
-                      <span class="divider">|</span>                   
+                      <span class="date">12.10.2023</span>
+                      <span class="divider">|</span>
                       <span class="place">İstanbul</span>
                     </div>
                   </div>
@@ -685,7 +657,7 @@
                 <div class="row">
                   <div class="col-4">
                     <div class="weather-icon">
-                      <i class="bi bi-cloud-sleet-fill fs-2 me-2" style="color: rgb(86, 91, 243);" ></i>
+                      <i class="bi bi-cloud-sleet-fill fs-2 me-2" style="color: rgb(86, 91, 243);"></i>
                       <span class="temperature fs-3">+21°</span>
                     </div>
                   </div>
@@ -693,8 +665,8 @@
                     <div class="weather-info pt-3">
                       <span class="desc">Kar Yağışlı</span>
                       <span class="divider">|</span>
-                      <span class="date">12.10.2023</span>   
-                      <span class="divider">|</span>                   
+                      <span class="date">12.10.2023</span>
+                      <span class="divider">|</span>
                       <span class="place">İstanbul</span>
                     </div>
                   </div>
@@ -707,7 +679,7 @@
                 <div class="row">
                   <div class="col-4">
                     <div class="weather-icon">
-                      <i class="bi bi-cloud-lightning-fill fs-2 me-2" style="color: rgb(247, 209, 19);" ></i>
+                      <i class="bi bi-cloud-lightning-fill fs-2 me-2" style="color: rgb(247, 209, 19);"></i>
                       <span class="temperature fs-3">+21°</span>
                     </div>
                   </div>
@@ -715,8 +687,8 @@
                     <div class="weather-info pt-3">
                       <span class="desc">Gök gürültülü</span>
                       <span class="divider">|</span>
-                      <span class="date">12.10.2023</span>   
-                      <span class="divider">|</span>                   
+                      <span class="date">12.10.2023</span>
+                      <span class="divider">|</span>
                       <span class="place">İstanbul</span>
                     </div>
                   </div>
@@ -729,7 +701,7 @@
                 <div class="row">
                   <div class="col-4">
                     <div class="weather-icon">
-                      <i class="bi bi-cloud-lightning-rain-fill fs-2 me-2" style="color: rgb(247, 65, 19);" ></i>
+                      <i class="bi bi-cloud-lightning-rain-fill fs-2 me-2" style="color: rgb(247, 65, 19);"></i>
                       <span class="temperature fs-3">+21°</span>
                     </div>
                   </div>
@@ -737,8 +709,8 @@
                     <div class="weather-info pt-3">
                       <span class="desc">Fırtına</span>
                       <span class="divider">|</span>
-                      <span class="date">12.10.2023</span>   
-                      <span class="divider">|</span>                   
+                      <span class="date">12.10.2023</span>
+                      <span class="divider">|</span>
                       <span class="place">İstanbul</span>
                     </div>
                   </div>
@@ -751,7 +723,7 @@
                 <div class="row">
                   <div class="col-4">
                     <div class="weather-icon">
-                      <i class="bi bi-cloud-sun-fill fs-2 me-2" style="color: rgb(247, 171, 7);" ></i>
+                      <i class="bi bi-cloud-sun-fill fs-2 " style="color: rgb(247, 171, 7);"></i>
                       <span class="temperature fs-3">+21°</span>
                     </div>
                   </div>
@@ -759,8 +731,8 @@
                     <div class="weather-info pt-3">
                       <span class="desc">Parçalı bulutlu</span>
                       <span class="divider">|</span>
-                      <span class="date">12.10.2023</span>   
-                      <span class="divider">|</span>                   
+                      <span class="date">12.10.2023</span>
+                      <span class="divider">|</span>
                       <span class="place">İstanbul</span>
                     </div>
                   </div>
@@ -771,9 +743,9 @@
             </div>
           </div><!-- WEATHER -->
 
-        <!-- End Right side columns -->
+          <!-- End Right side columns -->
 
-      </div>
+        </div>
     </section>
 
   </main><!-- End #main -->

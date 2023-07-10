@@ -1258,3 +1258,13 @@ h6 {
   font-size: 13px;
   color: #012970;
 }
+
+#nav{
+  position: relative;
+  float: right;
+  width: 20%;
+  margin-top : 0.01%;
+  margin-right: 0.01%;
+  margin-bottom: 0.01%;
+
+}

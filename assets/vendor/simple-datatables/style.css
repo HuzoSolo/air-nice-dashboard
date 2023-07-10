@@ -164,6 +164,8 @@
 
 .dataTables-empty {
 	text-align: center;
+	display: none;
+
 }
 
 .dataTable-top::after, .dataTable-bottom::after {
