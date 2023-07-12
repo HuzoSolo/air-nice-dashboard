@@ -5,13 +5,13 @@
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-    <title>Landing Page</title>
+    <title>Projection</title>
     <meta content="" name="description">
     <meta content="" name="keywords">
 
     <!-- Favicons -->
-    <link href="assets/img/favicon.png" rel="icon">
-    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+    <link href="../assets/img/favicon.png" rel="icon">
+    <link href="../assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
     <!-- Google Fonts -->
     <link href="https://fonts.gstatic.com" rel="preconnect">
@@ -20,19 +20,19 @@
         rel="stylesheet">
 
     <!-- Vendor CSS Files -->
-    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-    <link href="assets/vendor/quill/quill.snow.css" rel="stylesheet">
-    <link href="assets/vendor/quill/quill.bubble.css" rel="stylesheet">
-    <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
-    <link href="assets/vendor/simple-datatables/style.css" rel="stylesheet">
+    <link href="../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="../assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+    <link href="../assets/vendor/quill/quill.snow.css" rel="stylesheet">
+    <link href="../assets/vendor/quill/quill.bubble.css" rel="stylesheet">
+    <link href="../assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+    <link href="../assets/vendor/simple-datatables/style.css" rel="stylesheet">
 
     <!--iconify-->
     <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.8/dist/iconify-icon.min.js"></script>
 
     <!-- Template Main CSS File -->
-    <link href="assets/css/style.css" rel="stylesheet">
+    <link href="../assets/css/style.css" rel="stylesheet">
 
     <!-- =======================================================
   * Template Name: NiceAdmin - v2.5.0
@@ -60,15 +60,6 @@
         <nav class="header-nav ms-auto">
             <ul class="d-flex align-items-center">
 
-                <div class="d-flex align-items-center justify-content-between">
-                    <div class="logo d-flex align-items-center">
-                        <i class="bi bi-sun-fill fs-2 me-2" style="color: orange;"></i>
-                        <span class="d-none d-lg-block fw-light">12°</span>
-                        <span class="text-muted ps-2 fw-lighter fs-5">Güneşli</span>
-                        <span class="text-muted ps-2 fw-lighter fs-5">|</span>
-                        <span class="text-muted ps-2 fw-lighter fs-5">Ankara</span>
-                    </div>
-                </div>
 
                 <li class="nav-item dropdown">
 
@@ -203,7 +194,7 @@
         <ul class="sidebar-nav" id="sidebar-nav">
 
             <li class="nav-item">
-                <a class="nav-link " href="landingpage.html">
+                <a class="nav-link collapsed" href="landingpage.html">
                     <i class="bi bi-grid"></i>
                     <span>Ana Sayfa</span>
                 </a>
@@ -217,37 +208,18 @@
             </li>
 
             <li class="nav-item">
-                <a class="nav-link collapsed" href="projection.html">
+                <a class="nav-link " href="projection.html">
                     <i class="bi bi-globe2"></i>
                     <span>Projeksiyon</span>
                 </a>
             </li>
 
             <li class="nav-item">
-                <a class="nav-link collapsed" href="maintance-planned.html">
+                <a class="nav-link collapsed" href="landingpage.html">
                     <i class="bi bi-wrench-adjustable"></i>
                     <span>Bakım</span>
                 </a>
             </li>
-
-            <!-- <li class="nav-item">
-        <a class="nav-link collapsed" data-bs-target="#tables-nav" data-bs-toggle="collapse" href="#">
-          <i class="bi bi-wrench-adjustable"></i><span>Bakım</span><i class="bi bi-chevron-down ms-auto"></i>
-        </a>
-        <ul id="tables-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
-          <li>
-            <a href="maintance-planned.html">
-              <i class="bi bi-circle"></i><span>Planlanmış bakım</span>
-            </a>
-          </li>
-          <li>
-            <a href="maintance-form.html">
-              <i class="bi bi-circle"></i><span>Bakım formu</span>
-            </a>
-          </li>
-        </ul>
-      </li> -->
-
 
             <li class="nav-item">
                 <a class="nav-link collapsed" href="landingpage.html">
@@ -262,28 +234,18 @@
                     <span>Kullanıcılar</span>
                 </a>
             </li>
-
-
-            <li class="nav-item">
-                <a class="nav-link collapsed" href="landingpage.html">
-                    <i class="bi bi-speedometer"></i>
-                    <span>Birimler</span>
-                </a>
-            </li>
-
         </ul>
-
 
     </aside><!-- End Sidebar-->
 
     <main id="main" class="main">
 
         <div class="pagetitle">
-            <h1>Bakım</h1>
+            <h1>Bakım Formu</h1>
             <nav>
                 <ol class="breadcrumb">
                     <li class="breadcrumb-item"><a href="landingpage.html">Ana Sayfa</a></li>
-                    <li class="breadcrumb-item active">Bakım</li>
+                    <li class="breadcrumb-item active">İçerik</li>
                 </ol>
             </nav>
         </div><!-- End Page Title -->
@@ -293,100 +255,31 @@
 
                 <!-- Left side columns -->
                 <div class="col-lg-8">
+                    <div class="row">
 
-                    <div class="col-12">
-                        <div class="card p-4">
-                            <div class="card-title">
-                                <h3><i class="bi bi-wrench-adjustable-circle pe-2"></i> Planlanmış Bakım <label class="expand float-end"><i class="bi bi-caret-down"></i></label></h3>
-                            </div>
-                            <div class="card-body">
-                                <!-- Default Table -->
-                                <table class="table">
-                                    <thead>
-                                        <tr>
-                                            <th scope="col">#</th>
-                                            <th scope="col">Name</th>
-                                            <th scope="col">Position</th>
-                                            <th scope="col">Age</th>
-                                            <th scope="col">Start Date</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <th scope="row">1</th>
-                                            <td>Brandon Jacob</td>
-                                            <td>Designer</td>
-                                            <td>28</td>
-                                            <td>2016-05-25</td>
-                                        </tr>
-                                        <tr>
-                                            <th scope="row">2</th>
-                                            <td>Bridie Kessler</td>
-                                            <td>Developer</td>
-                                            <td>35</td>
-                                            <td>2014-12-05</td>
-                                        </tr>
-                                        <tr>
-                                            <th scope="row">3</th>
-                                            <td>Ashleigh Langosh</td>
-                                            <td>Finance</td>
-                                            <td>45</td>
-                                            <td>2011-08-12</td>
-                                        </tr>
-                                        <tr>
-                                            <th scope="row">4</th>
-                                            <td>Angus Grady</td>
-                                            <td>HR</td>
-                                            <td>34</td>
-                                            <td>2012-06-11</td>
-                                        </tr>
-                                        <tr>
-                                            <th scope="row">5</th>
-                                            <td>Raheem Lehner</td>
-                                            <td>Dynamic Division Officer</td>
-                                            <td>47</td>
-                                            <td>2011-04-19</td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                                <!-- End Default Table Example -->
-                            </div>
-                        </div>
+                        <!-- Reports -->
+                        <div class="col-12">
+                            
+                        </div><!-- End Reports -->
 
+                        <!-- TABLE -->
 
+                        <div class="col-12">
+                           
+                        </div><!-- TABLE -->
                     </div>
-
                 </div><!-- End Left side columns -->
 
                 <!-- Right side columns -->
-
                 <div class="col-lg-4">
 
-
-                    <!-- End Right side columns -->
-
                 </div>
-        </section>
 
-        <!--floating btn-->
 
-        <div class="floating-button">
-            <div class="floating-menu">
-                <button class="add-form">
-                    <i class="bi bi-plus-lg"></i>
-                </button>
-                <button onclick="printTable(table)">
-                    <i class="bi bi-printer"></i>
-                </button>
+                <!-- End Right side columns -->
+
             </div>
-            <button class="add-button" onclick="toggleMenu()">
-                <span class="plus">
-                    <i class="bi bi-list fs-3"></i>
-                </span>
-            </button>
-        </div>
-
-
+        </section>
 
     </main><!-- End #main -->
 
@@ -394,21 +287,17 @@
             class="bi bi-arrow-up-short"></i></a>
 
     <!-- Vendor JS Files -->
-    <script src="assets/vendor/apexcharts/apexcharts.min.js"></script>
-    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="assets/vendor/chart.js/chart.umd.js"></script>
-    <script src="assets/vendor/echarts/echarts.min.js"></script>
-    <script src="assets/vendor/quill/quill.min.js"></script>
-    <script src="assets/vendor/simple-datatables/simple-datatables.js"></script>
-    <script src="assets/vendor/tinymce/tinymce.min.js"></script>
-    <script src="assets/vendor/php-email-form/validate.js"></script>
+    <script src="../assets/vendor/apexcharts/apexcharts.min.js"></script>
+    <script src="../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="../assets/vendor/chart.js/chart.umd.js"></script>
+    <script src="../assets/vendor/echarts/echarts.min.js"></script>
+    <script src="../assets/vendor/quill/quill.min.js"></script>
+    <script src="../assets/vendor/simple-datatables/simple-datatables.js"></script>
+    <script src="../assets/vendor/tinymce/tinymce.min.js"></script>
+    <script src="../assets/vendor/php-email-form/validate.js"></script>
 
     <!-- Template Main JS File -->
-    <script src="assets/js/main.js"></script>
-    <!--table js-->
-    <script src="assets/js/table.js"></script>
-    <!--floating btn js-->
-    <script src="assets/js/floatingBtn.js"></script>
+    <script src="../assets/js/main.js"></script>
 
 </body>
 
