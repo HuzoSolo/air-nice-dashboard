@@ -286,10 +286,10 @@
                                             new ApexCharts(document.querySelector("#reportsChart"), {
                                                 series: [{
                                                     name: 'Giderler',
-                                                    data: [10000, 20000, 15000, 35000, 20000, 30000, 25000],
+                                                    data: [62364, 53632, 64532, 798767, 463473, 114325, 634647],
                                                 }, {
                                                     name: 'Gelirler',
-                                                    data: [50000, 40000, 45000, 25000, 40000, 30000, 35000]
+                                                    data: [32402, 65302, 423112, 3124532, 865956, 96422, 3467734]
                                                 }],
                                                 chart: {
                                                     height: 350,
@@ -320,7 +320,7 @@
                                                 },
                                                 xaxis: {
                                                     type: 'datetime',
-                                                    categories: ["2018-09-19T00:00:00.000Z", "2018-09-19T01:30:00.000Z", "2018-09-19T02:30:00.000Z", "2018-09-19T03:30:00.000Z", "2018-09-19T04:30:00.000Z", "2018-09-19T05:30:00.000Z", "2018-09-19T06:30:00.000Z"]
+                                                    categories: ["2018-09-19T00:00:00.000Z", "2019-09-19T01:30:00.000Z", "2020-09-19T02:30:00.000Z", "2021-09-19T03:30:00.000Z", "2022-09-19T04:30:00.000Z", "2023-09-19T05:30:00.000Z", "2024-09-19T06:30:00.000Z"]
                                                 },
                                                 tooltip: {
                                                     x: {
@@ -370,11 +370,11 @@
                                                         9340.85
                                                     ],
                                                     "dates": [
-                                                        "13 Nov 2017",
-                                                        "14 Nov 2017",
-                                                        "15 Nov 2017",
-                                                        "16 Nov 2017",
-                                                        "17 Nov 2017",
+                                                        "13 Oct 2017",
+                                                        "14 Oct 2017",
+                                                        "15 Oct 2017",
+                                                        "16 Oct 2017",
+                                                        "17 Oct 2017",
                                                         "20 Nov 2017",
                                                         "21 Nov 2017",
                                                         "22 Nov 2017",
@@ -722,7 +722,8 @@
                                                 },
                                                 legend: {
                                                     horizontalAlign: 'left'
-                                                }
+                                                },
+                                                colors: ["#0acf97"],
                                             }).render();
                                         });
                                     </script>
@@ -763,8 +764,20 @@
                                         </thead>
                                         <tbody>
                                             <tr>
-                                                <th scope="row"><a href="#">Gider tipi 1</a></th>
-                                                <td>12 <span class="text-muted"> $</span></td>
+                                                <th scope="row"><a href="#">İşçilik</a></th>
+                                                <td>3896 <span class="text-muted"> $</span></td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row"><a href="#">Yedek parça</a></th>
+                                                <td>1296 <span class="text-muted"> $</span></td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row"><a href="#">Rutin Bakım</a></th>
+                                                <td>1296 <span class="text-muted"> $</span></td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row"><a href="#">Bakım Onarım</a></th>
+                                                <td>1296 <span class="text-muted"> $</span></td>
                                             </tr>
                                         </tbody>
                                     </table>
@@ -802,7 +815,7 @@
                                     <i class="bi bi-lightning text-warning"></i>
                                 </div>
                                 <div class="ps-3">
-                                    <h6>45000 <span class="fs-6">KW</span> </h6>
+                                    <h6>46.463 <span class="fs-6">KW</span> </h6>
                                     <span class="text-danger small pt-1 fw-bold">12%</span> <span
                                         class="text-muted small pt-2 ps-1">azalma</span>
 

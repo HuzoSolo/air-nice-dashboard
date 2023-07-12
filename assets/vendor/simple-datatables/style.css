@@ -182,3 +182,12 @@ table.dataTable-table:focus {
 	outline: solid 1px black;
     outline-offset: -1px;
 }
+
+.expand {
+	cursor: pointer;
+}
+
+.expand:hover {
+	color: #2b52be;
+	transition: 0.3s ease-in-out all 0.1s;
+}

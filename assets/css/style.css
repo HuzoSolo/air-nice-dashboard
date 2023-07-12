@@ -1259,12 +1259,80 @@ h6 {
   color: #012970;
 }
 
-#nav{
+#nav {
   position: relative;
   float: right;
   width: 20%;
-  margin-top : 0.01%;
+  margin-top: 0.01%;
   margin-right: 0.01%;
   margin-bottom: 0.01%;
 
+}
+
+
+.floating-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 9999;
+}
+
+.floating-menu {
+  margin-bottom: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 10px;
+  /* background-color: #fff; */
+  border-radius: 8px;
+  padding: 10px;
+  /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); */
+  transition: all 0.3s ease;
+  visibility: hidden;
+  opacity: 0;
+  transform: translateY(15px);
+}
+
+.floating-menu.show {
+  visibility: visible;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.floating-menu button {
+  background-color: #337ab7;
+  color: #fff;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.floating-menu button:hover {
+  background-color: #23527c;
+}
+
+.add-button {
+  background-color: #337ab7;
+  color: #fff;
+  border: none;
+  width: 70px;
+  height: 70px;
+  padding: 8px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.add-button:hover {
+  background-color: #23527c;
+}
+
+.add-button.active .plus {
+  transform: rotate(45deg);
+}
+
+.plus {
+  transition: transform 0.3s ease;
 }
