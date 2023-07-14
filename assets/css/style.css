@@ -1277,6 +1277,11 @@ h6 {
   z-index: 9999;
 }
 
+.floating-button:active {
+  filter: blur(0.6px);
+}
+
+
 .floating-menu {
   margin-bottom: 8px;
   display: flex;
@@ -1313,6 +1318,16 @@ h6 {
   background-color: #23527c;
 }
 
+.form-add-button {
+  background-color: #337ab7;
+  color: #fff;
+  border: none;
+  padding: 8px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
 .add-button {
   background-color: #337ab7;
   color: #fff;
@@ -1335,4 +1350,17 @@ h6 {
 
 .plus {
   transition: transform 0.3s ease;
+}
+
+.hover:hover {
+  background-color: #7a8b9b;
+  border-color:#7a8b9b ;
+  cursor: pointer;
+  color: white;
+  transition: all 0.3s ease;
+}
+
+.bigger-checkbox{
+  width: 20px;
+  height: 20px;
 }

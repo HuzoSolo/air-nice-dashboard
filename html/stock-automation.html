@@ -194,7 +194,7 @@
         <ul class="sidebar-nav" id="sidebar-nav">
 
             <li class="nav-item">
-                <a class="nav-link collapsed" href="landingpage.html">
+                <a class="nav-link " href="landingpage.html">
                     <i class="bi bi-grid"></i>
                     <span>Ana Sayfa</span>
                 </a>
@@ -208,18 +208,21 @@
             </li>
 
             <li class="nav-item">
-                <a class="nav-link " href="projection.html">
+                <a class="nav-link collapsed" href="projection.html">
                     <i class="bi bi-globe2"></i>
                     <span>Projeksiyon</span>
                 </a>
             </li>
 
             <li class="nav-item">
-                <a class="nav-link collapsed" href="landingpage.html">
+                <a class="nav-link collapsed" href="maintance-planned.html">
                     <i class="bi bi-wrench-adjustable"></i>
                     <span>Bakım</span>
                 </a>
             </li>
+
+
+
 
             <li class="nav-item">
                 <a class="nav-link collapsed" href="landingpage.html">
@@ -227,13 +230,39 @@
                     <span>Otomasyon</span>
                 </a>
             </li>
+            <!-- 
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="landingpage.html">
+          <i class="bi bi-people"></i>
+          <span>Kullanıcılar</span>
+        </a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="units.html">
+          <i class="bi bi-speedometer"></i>
+          <span>Birimler</span>
+        </a>
+      </li> -->
 
             <li class="nav-item">
-                <a class="nav-link collapsed" href="landingpage.html">
-                    <i class="bi bi-people"></i>
-                    <span>Kullanıcılar</span>
+                <a class="nav-link collapsed" data-bs-target="#tables-nav" data-bs-toggle="collapse" href="#">
+                    <i class="bi bi-gear-fill"></i><span>Ayarlar</span><i class="bi bi-chevron-down ms-auto"></i>
                 </a>
+                <ul id="tables-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+                    <li>
+                        <a href="units.html">
+                            <i class="bi bi-circle"></i><span>Birimler</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="users.html">
+                            <i class="bi bi-circle"></i><span>Kullanıcılar</span>
+                        </a>
+                    </li>
+                </ul>
             </li>
+
         </ul>
 
     </aside><!-- End Sidebar-->

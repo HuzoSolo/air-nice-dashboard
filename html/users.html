@@ -279,7 +279,7 @@
     <main id="main" class="main">
 
         <div class="pagetitle">
-            <h1>Birimler</h1>
+            <h1>Kullanıcılar</h1>
             <nav>
                 <ol class="breadcrumb">
                     <li class="breadcrumb-item"><a href="landingpage.html">Ana Sayfa</a></li>
@@ -299,230 +299,132 @@
 
                 <div class="col-lg-10">
 
-                    <!--  metric units card  -->
-                    <div class="card overflow-auto">
-
-                        <div class="card-body">
-                            <div class="card-title"> Metrik Birimler </div>
-                            <div class="row">
-                                <div class="col-12">
-                                    <div class="row">
-                                        <div class="col-1">
-                                            <label for="length">Uzunluk</label>
-                                        </div>
-                                        <div class="col-11">
-                                            <select class="form-select" name="length" id="length">
-                                                <option value="m">Metre</option>
-                                                <option value="f">Feet</option>
-                                                <option value="i">Inch</option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-12">
-                                    <!--submit btn-->
-                                    <div class="btn btn-primary float-end m-2">Kaydet</div>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-                    <!--  End metric units card  -->
-
-                    <!-- Sıcaklık Birimleri Kartı -->
                     <div class="card overflow-auto">
                         <div class="card-body">
-                            <div class="card-title">Sıcaklık Birimleri</div>
-                            <div class="row">
-                                <div class="col-12">
-                                    <div class="row">
-                                        <div class="col-1">
-                                            <label for="temperature">Sıcaklık</label>
-                                        </div>
-                                        <div class="col-11">
-                                            <select class="form-select" name="temperature" id="temperature">
-                                                <option value="c">Celsius</option>
-                                                <option value="f">Fahrenheit</option>
-                                                <option value="k">Kelvin</option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-12">
-                                    <!-- Submit Button -->
-                                    <div class="btn btn-primary float-end m-2">Kaydet</div>
-                                </div>
+                            <div class="card-title">Kullanıcı İzinleri</div>
+                            <div class="table-responsive">
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th>Kullanıcı Türü</th>
+                                            <th>Ana Sayfa</th>
+                                            <th>Yerleşke Planı</th>
+                                            <th>Projeksiyon</th>
+                                            <th>Bakım</th>
+                                            <th>Otomasyon</th>
+                                            <th>Ayarlar</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <label>
+                                                    Admin
+                                                </label>
+                                            </td>
+                                            <td>
+                                                <input class="bigger-checkbox" type="checkbox" name="landingpage" checked>
+                                            </td>
+                                            <td>
+                                                <input class="bigger-checkbox" type="checkbox" name="campusplan" checked>
+                                            </td>
+                                            <td>
+                                                <input class="bigger-checkbox" type="checkbox" name="projection" checked>
+                                            </td>
+                                            <td>
+                                                <input class="bigger-checkbox" type="checkbox" name="maintance" checked>
+                                            </td>
+                                            <td>
+                                                <input class="bigger-checkbox" type="checkbox" name="automation" checked>
+                                            </td>
+                                            <td>
+                                                <input class="bigger-checkbox" type="checkbox" name="settings" checked>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <label>
+                                                    Operatör
+                                                </label>
+                                            </td>
+                                            <td>
+                                                <input class="bigger-checkbox" type="checkbox" name="landingpage"checked>
+                                            </td>
+                                            <td>
+                                                <input class="bigger-checkbox" type="checkbox" name="campusplan" checked>
+                                            </td>
+                                            <td>
+                                                <input class="bigger-checkbox" type="checkbox" name="projection">
+                                            </td>
+                                            <td>
+                                                <input class="bigger-checkbox" type="checkbox" name="maintance">
+                                            </td>
+                                            <td>
+                                                <input class="bigger-checkbox" type="checkbox" name="automation" checked>
+                                            </td>
+                                            <td>
+                                                <input class="bigger-checkbox" type="checkbox" name="settings">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <label> 
+                                                    Mühendis
+                                                </label>
+                                            </td>
+                                            <td>
+                                                <input class="bigger-checkbox" type="checkbox" name="landingpage" checked>
+                                            </td>
+                                            <td>
+                                                <input class="bigger-checkbox" type="checkbox" name="campusplan">
+                                            </td>
+                                            <td>
+                                                <input class="bigger-checkbox" type="checkbox" name="projection" checked>
+                                            </td>
+                                            <td>
+                                                <input class="bigger-checkbox" type="checkbox" name="maintance" checked>
+                                            </td>
+                                            <td>
+                                                <input class="bigger-checkbox" type="checkbox" name="automation">
+                                            </td>
+                                            <td>
+                                                <input class="bigger-checkbox" type="checkbox" name="settings" checked>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <label> 
+                                                    GES Sahibi
+                                                </label>
+                                            </td>
+                                            <td>
+                                                <input class="bigger-checkbox" type="checkbox" name="landingpage" checked>
+                                            </td>
+                                            <td>
+                                                <input class="bigger-checkbox" type="checkbox" name="campusplan">
+                                            </td>
+                                            <td>
+                                                <input class="bigger-checkbox" type="checkbox" name="projection" checked>
+                                            </td>
+                                            <td>
+                                                <input class="bigger-checkbox" type="checkbox" name="maintance" checked>
+                                            </td>
+                                            <td>
+                                                <input class="bigger-checkbox" type="checkbox" name="automation" checked>
+                                            </td>
+                                            <td>
+                                                <input class="bigger-checkbox" type="checkbox" name="settings">
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
                             </div>
-                        </div>
-                    </div>
-                    <!-- Sıcaklık Birimleri Kartı Sonu -->
-
-                    <!-- Elektrik Üretim Birimleri Kartı -->
-                    <div class="card overflow-auto">
-                        <div class="card-body">
-                            <div class="card-title">Elektrik Üretim Birimleri</div>
-                            <div class="row">
-                                <div class="col-12">
-                                    <div class="row">
-                                        <div class="col-1">
-                                            <label for="electricity">Elektrik</label>
-                                        </div>
-                                        <div class="col-11">
-                                            <select class="form-select" name="electricity" id="electricity">
-                                                <option value="w">Watt</option>
-                                                <option value="kw">Kilowatt</option>
-                                                <option value="mw">Megawatt</option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-12">
-                                    <!-- Submit Button -->
-                                    <div class="btn btn-primary float-end m-2">Kaydet</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Elektrik Üretim Birimleri Kartı Sonu -->
-
-                    <!-- Güneş Enerjisi Üretimi Birimleri Kartı -->
-                    <div class="card overflow-auto">
-                        <div class="card-body">
-                            <div class="card-title">Güneş Enerjisi Üretimi Birimleri</div>
-                            <div class="row">
-                                <div class="col-12">
-                                    <div class="row">
-                                        <div class="col-1">
-                                            <label for="solar">Güneş Enerjisi</label>
-                                        </div>
-                                        <div class="col-11">
-                                            <select class="form-select" name="solar" id="solar">
-                                                <option value="w/m2">Watt/m²</option>
-                                                <option value="kw/m2">Kilowatt/m²</option>
-                                                <option value="mw/m2">Megawatt/m²</option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-12">
-                                    <!-- Submit Button -->
-                                    <div class="btn btn-primary float-end m-2">Kaydet</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Güneş Enerjisi Üretimi Birimleri Kartı Sonu -->
-
-                    <!-- Satış Katsayısı Kartı -->
-                    <div class="card overflow-auto">
-                        <div class="card-body">
-                            <div class="card-title">Satış Katsayısı</div>
-                            <div class="row">
-                                <div class="col-12">
-                                    <div class="row pb-3">
-                                        <div class="col-2">
-                                            <label>Eski Değer:</label>
-                                        </div>
-                                        <div class="col-10">
-                                            <label id="salesCoefficientValue" class="fw-bold">35%</label>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-12">
-                                    <div class="row">
-                                        <div class="col-1">
-                                            <label for="salesCoefficient">Satış Katsayısı</label>
-                                        </div>
-                                        <div class="col-11">
-                                            <input type="number" class="form-control" name="salesCoefficient"
-                                                id="salesCoefficient" placeholder="Satış katsayısını girin">
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-12">
-                                    <!-- Submit Button -->
-                                    <div class="btn btn-primary float-end m-2">Kaydet</div>
-                                </div>
-                            </div>
+                            <div class="btn btn-primary float-end m-2">Kaydet</div>
                         </div>
                     </div>
 
-                    <!-- Vergi Oranı Kartı -->
-                    <div class="card overflow-auto">
-                        <div class="card-body">
-                            <div class="card-title">Vergi Oranı</div>
-                            <div class="row">
-                                <div class="col-12">
-                                    <div class="row pb-3">
-                                        <div class="col-2">
-                                            <label>Eski Değer:</label>
-                                        </div>
-                                        <div class="col-10">
-                                            <label id="taxRateValue" class="fw-bold">22%</label>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-12">
-                                    <div class="row">
-                                        <div class="col-1">
-                                            <label for="taxRate">Vergi Oranı (%)</label>
-                                        </div>
-                                        <div class="col-11">
-                                            <input type="number" class="form-control" name="taxRate" id="taxRate"
-                                                placeholder="Vergi oranını girin">
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-12">
-                                    <!-- Submit Button -->
-                                    <div class="btn btn-primary float-end m-2">Kaydet</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
 
-                    <!-- Vergi Katsayısı Kartı -->
-                    <div class="card overflow-auto">
-                        <div class="card-body">
-                            <div class="card-title">Vergi Katsayısı</div>
-                            <div class="row">
-                                <div class="col-12">
-                                    <div class="row">
-                                        <div class="col-12">
-                                            <div class="row pb-3">
-                                                <div class="col-2">
-                                                    <label>Eski Değer:</label>
-                                                </div>
-                                                <div class="col-10">
-                                                    <label id="taxCoefficientValue" class="fw-bold">13%</label>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="col-1">
-                                            <label for="taxCoefficient">Vergi Katsayısı</label>
-                                        </div>
-                                        <div class="col-11">
-                                            <input type="number" class="form-control" name="taxCoefficient"
-                                                id="taxCoefficient" placeholder="Vergi katsayısını girin">
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="col-12">
-                                    <!-- Submit Button -->
-                                    <div class="btn btn-primary float-end m-2">Kaydet</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Vergi Katsayısı Kartı Sonu -->
-
-
-
-
-                    <!-- End Middle columns -->
-                </div>
+                </div><!-- End Middle columns -->
 
                 <div class="col-lg-1">
 
