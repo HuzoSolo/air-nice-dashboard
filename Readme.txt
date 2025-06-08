@@ -1,1 +1,1 @@
-yooo ne çalıntısı sadece alıntı yapıyorum.🤠
+modded nice-admin theme for another project
